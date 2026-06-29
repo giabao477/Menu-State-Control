@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-
+// Chân I/O
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 #define POT_PIN 34
@@ -104,7 +104,7 @@ void showDetails() {
   display.clearDisplay();
   display.setTextSize(1);
   display.setCursor(0,0);
-
+// Detail 
   switch (pointer) {
     case 0:
       display.println(">> THONG TIN");
